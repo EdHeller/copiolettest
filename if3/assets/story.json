@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Bedroom",
+        "text": "You are in your bedroom. You see a door leading to the hallway.",
+        "options": ["hallway"],
+        "nextNodes": [1],
+        "descriptions": {
+            "bed": "The bed is neatly made. You can look under it.",
+            "under bed": "You find a lot of dust and a key.",
+            "key": "A small rusty key lies under the bed."
+        }
+    },
+    {
+        "title": "Hallway",
+        "text": "You are in the hallway. There is a locked door to the north and a mat on the floor.",
+        "options": ["bedroom", "look at mat", "use key on door"],
+        "nextNodes": [0, 1, 2],
+        "descriptions": {
+            "mat": "You lift the mat and find a key underneath.",
+            "door": "The door is locked."
+        }
+    },
+    {
+        "title": "Locked Room",
+        "text": "You have unlocked the door and entered the room. There is nothing here.",
+        "options": ["hallway"],
+        "nextNodes": [1],
+        "descriptions": {}
+    }
+]
